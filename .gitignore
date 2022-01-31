@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/app-crm
+app-crm.so
+app-crm.dylib
+app-crm.dll
+app-crm.a
+app-crm.lib
+app-crm-test-*
+*.exe
+*.o
+*.obj
+*.lst
