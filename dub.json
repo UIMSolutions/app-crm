@@ -1,9 +1,61 @@
 {
 	"authors": [
-		"oz"
+		"UI Manufaktur",
+		"Ozan Nurettin Süel",
+		"Sicherheitsschmiede"
 	],
-	"copyright": "Copyright © 2022, oz",
-	"description": "A minimal D application.",
-	"license": "proprietary",
-	"name": "app-crm"
+	"configurations": [
+		{
+			"name": "offline",
+			"targetType": "library"
+		},
+		{
+			"name": "test",
+			"targetType": "library",
+			"versions": [
+				"test_app_crm"
+			]
+		}
+	],
+	"copyright": "Copyright © 2017-2022, UI Manufaktur, 2022 Ozan Nurettin Süel",
+	"dependencies": {
+		"colored": "~>0.0.23",
+		"vibe-d": "~>0.9.4"
+	},
+	"description": "Library for CRM applications",
+	"importPaths": [
+		"../../LIBS/uim-core",
+		"../../LIBS/uim-oop",
+		"../../LIBS/uim-css",
+		"../../LIBS/uim-javascript",
+		"../../LIBS/uim-html",
+		"../../LIBS/uim-bootstrap",
+		"../../LIBS/uim-apps",
+		"../../LIBS/uim-servers",
+		"../../LIBS/uim-jsonbase",
+		"../../LIBS/uim-entities",
+		"../../LIBS/uim-entitybase",
+		"../../MODELS/model-crm",
+		"../../LAYOUTS/layout-tabler/source/layouts",
+		"./"
+	],
+	"license": "MIT",
+	"name": "app-crm",
+	"sourcePaths": [
+		"../../LIBS/uim-core",
+		"../../LIBS/uim-oop",
+		"../../LIBS/uim-css",
+		"../../LIBS/uim-javascript",
+		"../../LIBS/uim-html",
+		"../../LIBS/uim-bootstrap",
+		"../../LIBS/uim-apps",
+		"../../LIBS/uim-servers",
+		"../../LIBS/uim-jsonbase",
+		"../../LIBS/uim-entities",
+		"../../LIBS/uim-entitybase",
+		"../../MODELS/model-crm",
+		"../../LAYOUTS/layout-tabler/source/layouts",
+		"./"
+	],
+	"targetType": "library"
 }
