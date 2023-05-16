@@ -24,9 +24,9 @@ public {
   import apps.crm.views;
 }
 
-DApplication crmApp;
+DApp crmApp;
 static this() {
-  portalsApp = Application
+  portalsApp = App
     .name("crmApp")
     .rootPath("/apps/crm")
     .addRoute(Route("/", HTTPMethod.GET, CRMIndexPageController));
