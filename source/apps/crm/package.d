@@ -29,5 +29,6 @@ static this() {
   portalsApp = App
     .name("crmApp")
     .rootPath("/apps/crm")
+    .addRoute(Route("", HTTPMethod.GET, CRMIndexPageController));
     .addRoute(Route("/", HTTPMethod.GET, CRMIndexPageController));
 }
