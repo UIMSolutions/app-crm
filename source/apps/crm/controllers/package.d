@@ -1,9 +1,7 @@
-module apps.crm.controllers;
+module apps.myname.controllers;
 
-@safe:
-import apps.crm;
-
-public import apps.crm.controllers.actions;
-public import apps.crm.controllers.apis;
-public import apps.crm.controllers.components;
-public import apps.crm.controllers.pages;
+public { // Packages
+  import apps.myname.controllers.actions;
+  import apps.myname.controllers.components;
+  import apps.myname.controllers.pages;
+}

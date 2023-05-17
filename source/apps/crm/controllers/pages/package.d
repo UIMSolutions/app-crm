@@ -1,4 +1,6 @@
-module apps.crm.controllers.pages;
+module apps.myname.controllers.pages;
 
-@safe:
-import apps.crm;
+public {
+  import apps.myname.controllers.pages.error;
+  import apps.myname.controllers.pages.index;
+}

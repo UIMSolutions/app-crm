@@ -20,6 +20,7 @@ public import langs.javascript;
 public {
   import apps.crm.controllers;
   import apps.crm.helpers;
+  import apps.crm.routers;
   import apps.crm.tests;
   import apps.crm.views;
 }
