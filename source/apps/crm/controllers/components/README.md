@@ -1,1 +1,1 @@
-# Package 📦 apps.myname.controllers.components
+# Package 📦 apps.crm.controllers.components

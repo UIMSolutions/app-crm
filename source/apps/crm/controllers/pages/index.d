@@ -1,16 +1,16 @@
-module apps.myname.controllers.pages.index;
+module apps.crm.controllers.pages.index;
 
-import apps.myname;
+import apps.crm;
 @safe:
 
-class DMYNAMEIndexPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEIndexPageController"));
+class DcrmIndexPageController : DAPPPageController {
+  mixin(ControllerThis!("crmIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEIndexView(this));
+      .view(crmIndexView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEIndexPageController"));
+mixin(ControllerCalls!("crmIndexPageController"));

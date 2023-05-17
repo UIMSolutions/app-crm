@@ -1,7 +1,7 @@
-module apps.myname.controllers;
+module apps.crm.controllers;
 
 public { // Packages
-  import apps.myname.controllers.actions;
-  import apps.myname.controllers.components;
-  import apps.myname.controllers.pages;
+  import apps.crm.controllers.actions;
+  import apps.crm.controllers.components;
+  import apps.crm.controllers.pages;
 }

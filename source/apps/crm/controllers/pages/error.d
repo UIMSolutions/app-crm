@@ -1,16 +1,16 @@
-module apps.myname.controllers.pages.error;
+module apps.crm.controllers.pages.error;
 
-import apps.myname;
+import apps.crm;
 @safe:
 
-class DMYNAMEErrorPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEErrorPageController"));
+class DcrmErrorPageController : DAPPPageController {
+  mixin(ControllerThis!("crmErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEErrorView(this));
+      .view(crmErrorView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEErrorPageController"));
+mixin(ControllerCalls!("crmErrorPageController"));
