@@ -25,11 +25,11 @@ public {
   import apps.crm.views;
 }
 
-DApp crmApp;
 static this() {
-  portalsApp = App
+  AppRegistry.register(  
+    App
     .name("crmApp")
     .rootPath("/apps/crm")
-    .addRoute(Route("", HTTPMethod.GET, CRMIndexPageController));
-    .addRoute(Route("/", HTTPMethod.GET, CRMIndexPageController));
+    .addRoute(Route("", HTTPMethod.GET, CRMIndexPageController))
+    .addRoute(Route("/", HTTPMethod.GET, CRMIndexPageController)));
 }
