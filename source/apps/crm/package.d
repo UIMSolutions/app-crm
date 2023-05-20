@@ -25,8 +25,9 @@ public {
   import apps.crm.views;
 }
 
+@safe:
 static this() {
-  AppRegistry.register(  
+  AppRegistry.register("apps.crm",  
     App
     .name("crmApp")
     .rootPath("/apps/crm")
