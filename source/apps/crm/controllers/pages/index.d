@@ -3,7 +3,7 @@ module apps.crm.controllers.pages.index;
 import apps.crm;
 @safe:
 
-class DCRMIndexPageController : DAPPPageController {
+class DCRMIndexPageController : DPageController {
   mixin(ControllerThis!("CRMIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {

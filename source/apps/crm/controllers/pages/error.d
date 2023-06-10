@@ -3,7 +3,7 @@ module apps.crm.controllers.pages.error;
 import apps.crm;
 @safe:
 
-class DCRMErrorPageController : DAPPPageController {
+class DCRMErrorPageController : DPageController {
   mixin(ControllerThis!("CRMErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
