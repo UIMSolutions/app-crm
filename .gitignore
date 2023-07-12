@@ -1,7 +1,7 @@
 .dub
 docs.json
 __dummy.html
-docs/
+
 /app-crm
 app-crm.so
 app-crm.dylib
