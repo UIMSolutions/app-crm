@@ -3,8 +3,8 @@ module apps.crm.controllers.pages.index;
 import apps.crm;
 @safe:
 
-class DCRMIndexPageController : DPageController {
-  mixin(ControllerThis!("CRMIndexPageController"));
+class DIndexPageController : DPageController {
+  mixin(ControllerThis!("IndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
@@ -13,4 +13,4 @@ class DCRMIndexPageController : DPageController {
       .view(CRMIndexView(this));
   }
 }
-mixin(ControllerCalls!("CRMIndexPageController"));
+mixin(ControllerCalls!("IndexPageController"));
