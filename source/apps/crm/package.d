@@ -27,10 +27,13 @@ public {
 
 @safe:
 static this() {
-  AppRegistry.register("apps.crm",  
-    App
-    .name("crmApp")
-    .rootPath("/apps/crm")
-    .addRoute(Route("", HTTPMethod.GET, CRMIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, CRMIndexPageController)));
+
+  AppRegistry.register("apps.crm", 
+    App("crmApp","/apps/crm")
+      .importTranslations()
+      .addRoutes(
+        Route("", HTTPMethod.GET, IndexPageController),
+        Route("/", HTTPMethod.GET, IndexPageController)
+      )
+    );
 }
