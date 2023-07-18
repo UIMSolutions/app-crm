@@ -29,7 +29,7 @@ public {
 static this() {
 
   AppRegistry.register("apps.crm", 
-    App("crmApp","/apps/crm")
+    App("crmApp","apps/crm")
       .importTranslations()
       .addRoutes(
         Route("", HTTPMethod.GET, IndexPageController),
