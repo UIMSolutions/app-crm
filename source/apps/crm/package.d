@@ -2,8 +2,10 @@ module apps.crm;
 
 mixin(ImportPhobos!());
 
-// Dub
-public import vibe.d;
+// External
+public {
+  import vibe.d;
+}
 
 // UIM
 public import uim.core;
@@ -27,13 +29,18 @@ public {
 
 @safe:
 static this() {
+  auto myApp =     App("crmApp","apps/crm");
 
-  AppRegistry.register("apps.crm", 
-    App("crmApp","apps/crm")
-      .importTranslations()
-      .addRoutes(
-        Route("", HTTPMethod.GET, IndexPageController),
-        Route("/", HTTPMethod.GET, IndexPageController)
-      )
+  with(myApp) {
+    importTranslations;
+    addControllers([
+      "crm.index": IndexPageController
+    ]);
+    addRoutes(
+      Route("", HTTPMethod.GET, controller("crm.index")),
+      Route("/", HTTPMethod.GET, controller("crm.index"))
     );
+  }
+
+  AppRegistry.register("apps.crm", myApp);
 }
